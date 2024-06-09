@@ -95,9 +95,10 @@ const Navber = () => {
                   tabIndex={0}
                   className="menu menu-sm dropdown-content mt-3 z-[1] p-3 shadow bg-base-100 rounded-box w-60"
                 >
-                  <li>
-                    {/* <Link className=" bg-[#0C3330] hover:text-black text-white" to="/bid-request">My Attempted Assignments</Link> */}
-                  </li>
+        
+                    <Link className=" text-center" to="/bid-request">Update Profile</Link>
+                    <Link className=" text-center pt-2" to="/bid-request">Dashboard</Link>
+          
                   <li className="mt-2">
                     <button
                       onClick={logOut}
