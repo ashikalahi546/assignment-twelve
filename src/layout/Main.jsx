@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom";
-import Banner from "../component/banner/Banner";
 import Footer from "../pages/shared/footer/Footer";
 import Navber from "../pages/shared/navber/Navber";
 
