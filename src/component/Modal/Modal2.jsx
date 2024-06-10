@@ -12,7 +12,7 @@ const Modal2 = ({ item, close }) => {
         <img className="w-full h-72" src={image} alt="" />
         <button
           onClick={() => close()}
-          className="text-2xl font-bold  absolute top-3 text-white right-3"
+          className="text-3xl font-bold  absolute top-3 text-white right-3"
         >
           <RxCrossCircled className="text-black"/>
         </button>

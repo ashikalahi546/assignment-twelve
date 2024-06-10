@@ -50,7 +50,7 @@ const Shop = () => {
             </span>
           </p>
         </div>
-        <div className=" mt-10 grid grid-cols-4 gap-8">
+        <div className=" mt-10 grid xl:grid-cols-4 lg:grid-cols-3  sm:grid-cols-2 gap-8">
           {discounts.map((item, index) => (
             <div key={index} className="shadow border rounded-3xl ">
               <img className="w-full h-80" src={item["image"]} alt="" />

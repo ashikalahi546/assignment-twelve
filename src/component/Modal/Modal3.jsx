@@ -9,9 +9,9 @@ const Modal3 = ({ item, close }) => {
         <img className="w-full h-80" src={image} alt="" />
         <button
           onClick={() => close()}
-          className="text-2xl font-bold  absolute top-3 text-white right-3"
+          className="text-3xl font-bold  absolute top-3 text-white right-3"
         >
-          <RxCrossCircled />
+          <RxCrossCircled className="text-black" />
         </button>
         <div className="pt-6 pb-9  flex flex-col items-center text-center">
           <h2 className="text-3xl font-medium">{title}</h2>
