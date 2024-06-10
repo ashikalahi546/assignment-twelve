@@ -16,7 +16,7 @@ const Category = () => {
       </h1>
       <p className="pt-4 text-center">
         Donec scelerisque sollicitudin enim eu venenatis. Duis tincidunt laoreet
-        ex, in pretium orci vestibulum eget. Class aptent <span className="lg:block">taciti sociosqu ad
+        ex, in pretium orci vestibulum eget. Class aptent <span className="xl:block">taciti sociosqu ad
         litora torquent per conubia nostra, per inceptos himenaeos. Duis
         pharetra luctus lacus ut vestibulum.</span> Maecenas ipsum lacus, lacinia quis
         posuere ut.

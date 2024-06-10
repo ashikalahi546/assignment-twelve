@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Categori = ({ categori }) => {
-  console.log(categori);
-  const { title, image } = categori;
+  const { title, image, id } = categori;
+
   return (
     <div className="shadow   rounded-3xl w-full">
       <img
@@ -12,10 +13,14 @@ const Categori = ({ categori }) => {
         src={image}
         alt=""
       />
-  <div className="flex flex-col items-center">
-  <p className=" lg:text-2xl text-lg font-medium pt-3 ">{title}</p>
-  <button className="text-primary font-medium pt-1 pb-3">Learn more</button>
-  </div>
+      <div className="flex flex-col items-center">
+        <p className=" lg:text-2xl text-lg font-medium pt-3 ">{title}</p>
+        <Link to={`/categori/${id}`}>
+          <button className="text-primary font-medium pt-1 pb-3">
+            Learn more
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };
