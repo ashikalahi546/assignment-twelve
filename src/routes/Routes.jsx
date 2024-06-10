@@ -5,6 +5,7 @@ import ErrorPage from "../pages/shared/errorPage/ErrorPage";
 import Register from "../pages/register/Register";
 import Login from "../pages/login/Login";
 import Shop from "../pages/shop/Shop";
+import PrivateRoute from "./PrivateRoute";
 
 
 export const router = createBrowserRouter([
@@ -27,7 +28,7 @@ export const router = createBrowserRouter([
       },
       {
         path:'/shop',
-        element:<Shop/>
+        element:<PrivateRoute><Shop/></PrivateRoute>
       }
     ],
   },

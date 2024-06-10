@@ -41,6 +41,7 @@ const Login = () => {
     setErrorEmail("");
     signIn(email, password).then((res) => {
       console.log(res.user);
+      resert()
       setSuccess("User Created Successfully");
     });
     navigate("/").catch((error) => {
@@ -55,16 +56,18 @@ const Login = () => {
         </h2>
         <form onSubmit={handleLogin} className="mt-5 px-5">
           <input
+          required
             type="email"
             name="email"
             placeholder="Enter your email"
-            className="border outline-none text-sm px-4 py-2.5 focus:border-primary rounded-lg w-full mb-5"
+            className="border outline-none text-sm px-4 py-2.5 focus:border-primary rounded-lg w-full "
           />
-          <div className="text-red-500 pt-3 text-center">
+          <div className="text-red-500   pt-2">
             {errorEmail && <p>{errorEmail}</p>}
           </div>
-          <div className="relative">
+          <div className="relative mt-5">
             <input
+            required
               type={showPassword ? "text" : "password"}
               name="password"
               placeholder="password"

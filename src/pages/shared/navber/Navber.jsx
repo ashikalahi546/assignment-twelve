@@ -53,7 +53,7 @@ const Navber = () => {
           </li>
           <div className="">
           {user && (
-            <Link to="" className="">
+            <Link to="/" className="">
               <img src="/image/shoping.png" alt="" />
             </Link>
           )}
