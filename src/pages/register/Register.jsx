@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../component/auth/AuthProvider";
 
 const Register = () => {
-  const { createUser, updateUserProfile, setUser, user } =
+  const { createUser, updateUserProfile, setUser, user,signInWithGoogle } =
     useContext(AuthContext);
   // const [passwordShow, setPasswordShow] = useState("");
   const navigate = useNavigate('')
@@ -126,7 +126,7 @@ const Register = () => {
 
 
           <div className="flex justify-center gap-5 pt-5">
-          <div onClick={()=>signInWithGoogle()}>
+          <div onClick={signInWithGoogle}>
           <img className="cursor-pointer" src="/image/Frame 2204.png" alt="" />
           </div>
             <img className="cursor-pointer" src="/image/Frame 2205.png" alt="" />

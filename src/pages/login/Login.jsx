@@ -104,7 +104,7 @@ const Login = () => {
 
 
           <div className="flex justify-center gap-5 pt-5">
-          <div onClick={()=>signInWithGoogle()}>
+          <div onClick={signInWithGoogle}>
           <img className="cursor-pointer" src="/image/Frame 2204.png" alt="" />
           </div>
             <img className="cursor-pointer" src="/image/Frame 2205.png" alt="" />
